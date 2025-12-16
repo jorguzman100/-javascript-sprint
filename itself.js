@@ -13,15 +13,15 @@ const trackingInfo = {
     status: "in transit"
 }
 
-console.log("sender: ", sender);
-console.log("deliveryPackage: ", deliveryPackage);
-console.log("trackingInfo: ", trackingInfo);
+// console.log("sender: ", sender);
+// console.log("deliveryPackage: ", deliveryPackage);
+// console.log("trackingInfo: ", trackingInfo);
 
-sender.name = 'Jerry';
+// sender.name = 'Jerry';
 
-console.log("sender: ", sender);
-console.log("deliveryPackage: ", deliveryPackage);
-console.log("trackingInfo: ", trackingInfo);
+// console.log("sender: ", sender);
+// console.log("deliveryPackage: ", deliveryPackage);
+// console.log("trackingInfo: ", trackingInfo);
 
-console.log("package.sender.name: ", deliveryPackage.sender.name);
-console.log("trackingInfo.sender.name: ", trackingInfo.sender.name);
+// console.log("package.sender.name: ", deliveryPackage.sender.name);
+// console.log("trackingInfo.sender.name: ", trackingInfo.sender.name);
