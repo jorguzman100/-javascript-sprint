@@ -1,5 +1,5 @@
 const filterOutOddNumbers = (arr) => {
-    return arr.filter( value => value % 2 !== 0 );
+    return arr.filter( value => value % 2 === 0 );
 }
 
 const filterObjectsByNameLength = (arr, maxLength) => {
@@ -15,6 +15,9 @@ const compoundFilter = (arr) => {
         product.location !== 'Underground'
     );
 }
+
+
+// console.log(filterOutOddNumbers([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 
 const objects = [
