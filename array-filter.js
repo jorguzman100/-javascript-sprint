@@ -23,7 +23,7 @@ const objects = [
   { id: 3, name: "Charlie" }
 ]
 
-console.log(filterObjectsByNameLength(objects, 5));
+// console.log(filterObjectsByNameLength(objects, 5));
 // [{ id: 1, name: "Alice" }, { id: 2, name: "Bob" }]
 
 
@@ -54,5 +54,5 @@ const products = [
   },
 ]
 
-console.log(compoundFilter(products))
+// console.log(compoundFilter(products))
 // [{ code: "ABC123", category: "electronics", price: 75, location: "Store" }, { code: "LMN012", category: "accessories", price: 90, location: "Street" }]
