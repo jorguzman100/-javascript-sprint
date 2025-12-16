@@ -20,4 +20,4 @@ const printPrettyDate = (date) => {
 };
 
 
-console.log(printPrettyDate(new Date()));
+// console.log(printPrettyDate(new Date()));
