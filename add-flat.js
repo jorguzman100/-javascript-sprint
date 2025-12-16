@@ -1,6 +1,6 @@
 const sumNestedArray = (arr) => {
     let sum = 0;
-    for (value of arr.flat(Infinity)) {
+    for (const value of arr.flat(Infinity)) {
         sum += typeof value === 'number' ? value : 0;
     }
     return sum;
