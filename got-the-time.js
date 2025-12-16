@@ -16,7 +16,7 @@ const printPrettyDate = (date) => {
     hour12: true,
   });
 
-  return `Today is ${day}, ${month} ${dayOfMonth}, ${year}, and the time is ${time}.`;
+  console.log(`Today is ${day}, ${month} ${dayOfMonth}, ${year}, and the time is ${time}.`);
 };
 
 
