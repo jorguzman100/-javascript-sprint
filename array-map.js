@@ -6,7 +6,11 @@ const convert2DArrayToObjectArray = (arr) => {
 }
 
 const convertArrayOfObjectsToStrings = (objectsArr) => {
-    return objectsArr.map( obj => `Name: ${obj.name}, Age: ${obj.age}, City: ${obj.city}` );
+    return objectsArr.map( obj =>
+        Object.entries(obj)
+        .map(([key, val]) => `${key}: ${val}` )
+        .join(', ')
+     );
 }
 
 
@@ -24,12 +28,12 @@ const concatenateStrings = (stringsArr, maxLength) => {
 // // [{ name: "Alice" }, { age: 30 }, { city: "New York" }]
 
 
-// const objects = [
-//   { name: "Alice", age: 30, city: "New York" },
-//   { name: "Bob", age: 25, city: "Los Angeles" },
-// ]
-// console.log(convertArrayOfObjectsToStrings(objects))
-// // ["Name: Alice, Age: 30, City: New York", "Name: Bob, Age: 25, City: Los Angeles"]
+const objects = [
+  { name: "Alice", age: 30, city: "New York" },
+  { name: "Bob", age: 25, city: "Los Angeles" },
+]
+console.log(convertArrayOfObjectsToStrings(objects))
+// ["Name: Alice, Age: 30, City: New York", "Name: Bob, Age: 25, City: Los Angeles"]
 
 
 
