@@ -19,13 +19,13 @@ const concatenateStrings = (stringsArr, maxLength) => {
 }
 
 
-// const data = [
-//   ["name", "Alice"],
-//   ["age", 30],
-//   ["city", "New York"],
-// ];
-// console.log(convert2DArrayToObjectArray(data))
-// // [{ name: "Alice" }, { age: 30 }, { city: "New York" }]
+const data = [
+  ["name", "Alice"],
+  ["age", 30],
+  ["city", "New York"],
+];
+console.log(convert2DArrayToObjectArray(data))
+// [{ name: "Alice" }, { age: 30 }, { city: "New York" }]
 
 
 const objects = [
@@ -37,7 +37,7 @@ console.log(convertArrayOfObjectsToStrings(objects))
 
 
 
-// const strings = ["apple", "banana", "kiwi", "orange", "pineapple"];
+const strings = ["apple", "banana", "kiwi", "orange", "pineapple"];
 
-// console.log(concatenateStrings(strings, 5))
-// // ["apple", "banan...", "kiwi", "orang...", "pinea..."]
+console.log(concatenateStrings(strings, 5))
+// ["apple", "banan...", "kiwi", "orang...", "pinea..."]
