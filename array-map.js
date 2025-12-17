@@ -8,7 +8,7 @@ const convert2DArrayToObjectArray = (arr) => {
 const convertArrayOfObjectsToStrings = (objectsArr) => {
     return objectsArr.map( obj =>
         Object.entries(obj)
-        .map(([key, val]) => `${key}: ${val}` )
+        .map(([key, val]) => `${key[0].toUpperCase() + key.slice(1)}: ${val}` )
         .join(', ')
      );
 }
