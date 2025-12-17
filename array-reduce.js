@@ -3,6 +3,7 @@ const getTotalFromShoppingBasket = (arr) => {
 }
 
 const getAverageAge = (arr) => {
+    if (arr.length === 0) return 0; 
     return arr.reduce( (total, person) => total += person.age, 0) / arr.length;
 }
 
@@ -34,6 +35,7 @@ const concatenateObjects = (arr) => {
 //   { name: "David", age: 40 },
 // ]
 // console.log(getAverageAge(people)) // 32.5
+// console.log(getAverageAge([])) // 0
 
 
 // const objects = [
