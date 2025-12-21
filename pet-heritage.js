@@ -36,17 +36,17 @@ class Cat extends Pet {
 
 
 
-// const pet = new Pet('Teri', 10, 'Bird');
-// pet.makeSound(); // I am a Bird
+const pet = new Pet('Teri', 10, 'Bird');
+pet.makeSound(); // I am a Bird
 
 
-// // Dog(name, age, breed, favoriteToy);
-// // Constructor can assume the `species` as 'Dog'
-// const dog = new Dog('Bruno', 7, 'Spaniel', 'tennis ball');
-// dog.makeSound(); // I am a Dog
-// dog.fetch();  // Bruno is fetching its tennis ball
+// Dog(name, age, breed, favoriteToy);
+// Constructor can assume the `species` as 'Dog'
+const dog = new Dog('Bruno', 7, 'Spaniel', 'tennis ball');
+dog.makeSound(); // I am a Dog
+dog.fetch();  // Bruno is fetching its tennis ball
 
 
-// const cat = new Cat('Paws', 2, 'black and white', 'mat')
-// cat.makeSound()  // I am a Cat
-// cat.purr()  // Paws purrs on the mat
+const cat = new Cat('Paws', 2, 'black and white', 'mat')
+cat.makeSound()  // I am a Cat
+cat.purr()  // Paws purrs on the mat
