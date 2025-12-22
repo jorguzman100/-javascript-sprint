@@ -18,7 +18,7 @@ class Dog extends Pet {
     }
 
     fetch() {
-        console.log(`Bruno is fetching its ${this.favoriteToy}`);
+        console.log(`${this.name} is fetching its ${this.favoriteToy}`);
     }
 }
 
@@ -30,7 +30,7 @@ class Cat extends Pet {
     }
 
     purr() {
-        console.log(`Paws purrs on the ${this.favoriteNapSpot}`);
+        console.log(`${this.name} purrs on the ${this.favoriteNapSpot}`);
     }
 }
 
