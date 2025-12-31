@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>get-el DOM Test</title>
+
+    <!-- Styke -->
+     <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <h1 id="main-title">DOM Test Page</h1>
+
+    <!-- =========================
+         TAG TESTS
+         ========================= -->
+    <section>
+      <h2>Links</h2>
+
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="footer-link">Contact</a>
+    </section>
+
+    <!-- =========================
+         CLASS TESTS
+         ========================= -->
+    <section>
+      <h2 class Tests</h2>
+
+      <p class="text">Paragraph 1</p>
+      <p class="text">Paragraph 2</p>
+      <div class="text box">Div with two classes</div>
+    </section>
+
+    <!-- =========================
+         ID TESTS
+         ========================= -->
+    <section>
+      <h2>ID Tests</h2>
+
+      <button id="submit-button">Submit</button>
+      <button id="cancel-button">Cancel</button>
+    </section>
+
+    <!-- =========================
+         ATTRIBUTE TESTS
+         ========================= -->
+    <section>
+      <h2>Attribute Tests</h2>
+
+      <input type="text" name="username" data-role="input" />
+      <input type="password" name="password" data-role="input" />
+
+      <button data-action="save">Save</button>
+      <button data-action="delete">Delete</button>
+
+      <div data-test></div>
+      <span data-test="example"></span>
+    </section>
+
+    <!-- =========================
+         MIXED / EDGE CASES
+         ========================= -->
+    <section>
+      <h2>Mixed</h2>
+
+      <ul class="list">
+        <li class="item" data-category="a">Item A</li>
+        <li class="item" data-category="b">Item B</li>
+        <li class="item" data-category="a">Item C</li>
+      </ul>
+    </section>
+  </body>
+  <!-- JS -->
+  <script defer src="./get-el.js"></script>
+</html>

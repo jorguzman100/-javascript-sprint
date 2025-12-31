@@ -1,0 +1,170 @@
+/* =================================================
+   Dark Gray + Industrial Neon Theme
+   Calm, technical, developer-first
+   ================================================= */
+
+/* =========================
+   Design tokens
+   ========================= */
+
+:root {
+  /* Backgrounds */
+  --bg: #1b1f26;                    /* dark gray (not black) */
+  --surface: rgba(255, 255, 255, 0.05); /* glass surface */
+
+  /* Text */
+  --text: #e3e6ed;
+  --muted: #9aa1ad;
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.15);
+
+  /* Neon accents (cool, industrial) */
+  --neon-cyan: #4deeea;
+  --neon-blue: #5aa9ff;
+  --neon-lime: #7cff5a;
+
+  /* Primary accent */
+  --accent: var(--neon-cyan);
+
+  /* Spacing */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+
+  /* Radius */
+  --radius: 0.5rem;
+
+  /* Font */
+  --font-base: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* =========================
+   Base reset
+   ========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: var(--space-3);
+  font-family: var(--font-base);
+  background: linear-gradient(
+    180deg,
+    #20252e,
+    var(--bg)
+  );
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* =========================
+   Typography
+   ========================= */
+
+h1,
+h2 {
+  margin-top: 0;
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+h2 {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+p,
+span,
+li {
+  color: var(--text);
+}
+
+/* =========================
+   Sections (glass cards)
+   ========================= */
+
+section {
+  margin-bottom: var(--space-3);
+  padding: var(--space-2);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(6px);
+}
+
+/* =========================
+   Links
+   ========================= */
+
+a {
+  color: var(--neon-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+
+button {
+  background: transparent;
+  color: var(--neon-cyan);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.7rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 8px rgba(77, 238, 234, 0.4);
+}
+
+/* =========================
+   Inputs
+   ========================= */
+
+input {
+  background: transparent;
+  color: var(--neon-lime);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius);
+}
+
+input::placeholder {
+  color: var(--muted);
+}
+
+/* =========================
+   Lists
+   ========================= */
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+/* =========================
+   Focus (important for JS)
+   ========================= */
+
+:focus-visible {
+  outline: 2px solid var(--neon-blue);
+  outline-offset: 2px;
+}
