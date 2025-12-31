@@ -25,7 +25,7 @@ const initializeChessboard = () => {
         const clickedCell = event.target;
         console.log(clickedCell);
         previousClickedCell ? previousClickedCell.classList.remove('red') : null;
-        clickedCell.classList.add('red');
+        clickedCell.classList.toggle('red');
         previousClickedCell = clickedCell;
     });
 }
