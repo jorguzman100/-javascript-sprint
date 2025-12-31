@@ -9,7 +9,7 @@ const getElementsByClassName = (className) => {
 }
 const getElementById = (id) => {
     const element = document.getElementById(id);
-    return element ? [element] : [];
+    return element ? element : undefined;
 }
 const getElementsByAttribute = (attribute, value) => {
     return value ? document.querySelectorAll(`[${attribute}="${value}"]`) :
