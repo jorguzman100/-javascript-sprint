@@ -1,0 +1,32 @@
+
+/* ********** Layout ********** */
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    min-width: 600px;
+    min-height: 600px;
+}
+
+
+/* ********** Components ********** */
+.square {
+    text-align: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+.light {
+    background-color: white;
+}
+
+.dark {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
