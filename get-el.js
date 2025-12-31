@@ -16,10 +16,10 @@ const getElementsByAttribute = (attribute, value) => {
     document.querySelectorAll(`[${attribute}]`) ;
 }
 
-console.log("a: ", getElementsByTag('a'));
-console.log("item ", getElementsByClassName('item'));
-console.log("submit-button: ", getElementById('submit-button'));
-console.log("type: ", getElementsByAttribute('type'));
-console.log("returned type: ", typeof getElementsByAttribute('type'));
-console.log("data-category: ", getElementsByAttribute('data-category'));
-console.log("[data-category, a]: ", getElementsByAttribute('data-category', 'a'));
+// console.log("a: ", getElementsByTag('a'));
+// console.log("item ", getElementsByClassName('item'));
+// console.log("submit-button: ", getElementById('submit-button'));
+// console.log("type: ", getElementsByAttribute('type'));
+// console.log("returned type: ", typeof getElementsByAttribute('type'));
+// console.log("data-category: ", getElementsByAttribute('data-category'));
+// console.log("[data-category, a]: ", getElementsByAttribute('data-category', 'a'));
