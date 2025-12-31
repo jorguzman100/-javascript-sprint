@@ -8,7 +8,7 @@ const getElementsByClassName = (className) => {
     return document.getElementsByClassName(className);
 }
 const getElementById = (id) => {
-    return document.getElementById(id);
+    return document.querySelectorAll(`#${id}`);
 }
 const getElementsByAttribute = (attribute, value) => {
     return value ? document.querySelectorAll(`[${attribute}="${value}"]`) :
