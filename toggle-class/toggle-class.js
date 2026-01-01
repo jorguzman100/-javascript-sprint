@@ -14,7 +14,7 @@ document.body.append(content);
 // The controls
 const controls = document.createElement('div');
 controls.classList.add('controls');
-for(let i = 0; i < 4; i++) {
+for (let i = 0; i < 4; i++) {
     const button = document.createElement('BUTTON');
     if (i === 0) {
         button.id = 'bold';
@@ -43,6 +43,10 @@ document.body.append(controls);
 document.body.addEventListener('click', (event) => {
     const button = event.target.tagName === 'BUTTON' ? event.target.id : null;
     if (button) {
-        p.classList.toggle(`${button}`);
+        if (button === 'highlight') {
+            content.classList.toggle(`${button}`)
+        } else {
+            p.classList.toggle(`${button}`);
+        }
     }
 });
