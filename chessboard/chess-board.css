@@ -1,4 +1,10 @@
 
+/* ********** Base ********** */
+
+body {
+    background-color: darkred;
+}
+
 /* ********** Layout ********** */
 
 .chessboard {
@@ -7,6 +13,9 @@
     grid-template-rows: repeat(8, 1fr);
     min-width: 600px;
     min-height: 600px;
+    border: 9px solid #222;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 
@@ -24,9 +33,10 @@
 }
 
 .dark {
-    background-color: black;
+    background-color: #222;
 }
 
 .red {
-    background-color: red;
+    background-color: darkred;
 }
+

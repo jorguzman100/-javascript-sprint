@@ -12,7 +12,7 @@ const initializeChessboard = () => {
             cell.classList.add('square');
             cell.classList.add(cellColor);
             cell.setAttribute('id', `square-${row}-${col}`);
-            cell.textContent = `square-${row}-${col}`;
+            // cell.textContent = `square-${row}-${col}`;
             chessBoard.append(cell);
         }
     }
@@ -23,11 +23,30 @@ const initializeChessboard = () => {
     let previousClickedCell;
     chessBoard.addEventListener('click', (event) => {
         const clickedCell = event.target;
-        clickedCell.classList.contains('red') ? 
-        clickedCell.classList.remove('red') :
+        
+        // Ignore clicks out of any square
+        if (!clickedCell.classList.contains('square')) {
+            console.log('Out of any square');
+            return;
+        } else {
+            console.log(`Square ${clickedCell.id}`);
+        }
+
+        // When it is the same cell
+        if (previousClickedCell === clickedCell) {
+            clickedCell.classList.toggle('red');
+            return;
+        }
+
+        // Remove red from previous cell
+        if (previousClickedCell) {
+            previousClickedCell.classList.remove('red');
+        }
+
+        // Add red to clicked cell
         clickedCell.classList.add('red');
-        previousClickedCell ? previousClickedCell.classList.remove('red') : null;
         previousClickedCell = clickedCell;
+
     });
 }
 
