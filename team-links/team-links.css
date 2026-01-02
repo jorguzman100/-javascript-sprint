@@ -1,0 +1,127 @@
+/********** Base **********/
+
+:root {
+    /* Backgrounds */
+    --bg: #1b1f26;
+    --surface: rgba(255, 255, 255, 0.06);
+
+    /* Text */
+    --text: #e3e6ed;
+    --muted: #9aa1ad;
+
+    /* Borders */
+    --border: rgba(255, 255, 255, 0.18);
+
+    /* Accent */
+    --accent: #1b1f26;
+
+    /* Spacing */
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+
+    /* Radius */
+    --radius: 0.6rem;
+
+    /* Font */
+    --font-base: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: var(--space-3);
+    font-family: var(--font-base);
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/********** Component: Team Links **********/
+
+.team-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 520px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.team-links li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: var(--space-2) var(--space-3);
+
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+
+    background: var(--surface);
+    backdrop-filter: blur(6px);
+
+    transition:
+        transform 120ms ease,
+        box-shadow 120ms ease;
+}
+
+.team-links li:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 12px rgba(77, 238, 234, 0.35);
+}
+
+/* Link (team name) */
+.team-links a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* REQUIRED: bold on li hover */
+.team-links li:hover a {
+    font-weight: bold;
+}
+
+/* Copy action */
+.team-links span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.35rem 0.65rem;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+
+    color: var(--accent);
+    background: rgba(77, 238, 234, 0.15);
+
+    border: 1px solid rgba(77, 238, 234, 0.45);
+    border-radius: 0.4rem;
+
+    cursor: pointer;
+    user-select: none;
+
+    transition:
+        background-color 120ms ease,
+        box-shadow 120ms ease,
+        transform 120ms ease;
+}
+
+.team-links span:hover {
+    background: rgba(77, 238, 234, 0.25);
+    box-shadow: 0 0 8px rgba(77, 238, 234, 0.25);
+    font-weight: bold;
+}
+
+.team-links span:active {
+    transform: scale(1.15);
+    box-shadow: 0 0 4px rgba(77, 238, 234, 0.8);
+}
